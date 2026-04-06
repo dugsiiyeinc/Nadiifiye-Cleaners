@@ -1,0 +1,107 @@
+/* About US Section */
+.about-sec{
+display: flex;
+flex-direction: column;
+gap: 3rem;
+}
+
+.section-1{
+display: grid;
+grid-template-columns: 2fr 1fr;
+align-items: center;
+gap: 2rem;
+padding: 0px 50px;
+}
+.hygin-image{
+height: 200px;
+margin-top: 8.5rem;
+background-image: url("Assets/Gemini_Generated_Image_gsnunegsnunegsnu.png");
+background-repeat: no-repeat;
+background-position: right center;
+background-size: cover;
+border-radius: 1rem
+}
+.contects{
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 1rem;
+margin-top: 7rem;
+}
+.contects h1 span{
+color: #3bed59
+}
+.cards-container{
+/* background-color: #3bed59; */
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 24px;
+align-items: center;
+justify-content: center;
+max-width: 1100px;
+width: 100%;
+color: rgb(11, 10, 10);
+font-size: 0.7rem;
+margin: auto;
+}
+.card{
+background-color: rgb(202, 250, 202);
+border: none;
+border-radius: 1rem ;
+box-shadow: 1px 0px 0px 1px rgba(177, 246, 143, 0.1);
+transition: 0.3s;
+padding: 20px 22px 24px;
+display: flex;
+flex-direction: column;
+}
+.card h2{
+
+ font-size: 1.2rem;
+ font-weight: 600;
+ line-height: 1px;
+ margin-top: 1rem;
+}
+.card p{
+   text-align: left;
+   margin-top: 15px;
+   color: rgb(90, 88, 88);
+}
+
+.line-orange{
+border: 1px solid green;
+}
+
+ .card .by {
+ color: rgb(16, 29, 16);
+ font-weight: 700;
+}
+
+.btns{
+width: 80%;
+display: flex;
+flex-direction: column;
+padding: 10px 00px;
+border-radius: 8px;
+font-size: 14px;
+font-weight: 600;
+cursor: pointer;
+gap: 0.6rem;
+color: white;
+}
+.btn-outline{
+background-color: #000;
+color: #ffff;
+padding: 0.5rem;
+border-radius: 1rem;
+cursor: pointer;
+border: none;
+
+}
+.btn-primary{
+background-color:#fff;
+color: rgb(4, 4, 4);
+padding: 0.5rem;
+border-radius: 1rem;
+border: none;
+cursor: pointer;
+}
