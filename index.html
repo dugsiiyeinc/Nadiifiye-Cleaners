@@ -342,5 +342,54 @@
   </div>
 </footer>
 
+<script>
+    <!-- Background Change on Navigation Section on Scrolling -->
+        window.onscroll = function() {
+            var nav = document.getElementById('mainNav');
+            // Sticky transition logic
+            if (window.pageYOffset > 80) {
+                nav.classList.add("scrolled");
+            } else {
+                nav.classList.remove("scrolled");
+            }
+        };
+
+
+        
+    </script>
+
+
+    <!-- Right-side Tabs Change when Clicked -->
+    <script>
+    const tabs = document.querySelectorAll('.tab-item');
+
+    const panels = document.querySelectorAll('.tab-panel');
+
+    tabs.forEach(tab => {
+
+        tab.addEventListener('click', () => {
+
+            // 1. Remove 'active' class from all buttons and panels
+
+            tabs.forEach(t => t.classList.remove('active'));
+
+            panels.forEach(p => p.classList.remove('active'));
+
+            // 2. Add 'active' class to the clicked button
+
+            tab.classList.add('active');
+            // 3. Find the panel that matches the data-class of the button
+
+            const classNumber = tab.getAttribute('data-class');
+
+            document.getElementById('class-' + classNumber).classList.add('active');
+
+        });
+
+    });
+    
+
+</script>
+
 </body>
 </html>
