@@ -357,3 +357,224 @@ body {
             margin-bottom: 15px;
             color: #3bed59;
         }
+
+        /* TESTIMONIAL SECTION */
+.testimolial-sec{
+display: flex;
+gap: 2rem;
+/* justify-content: center; */
+align-items: flex-start;
+margin-top: 5rem;
+margin-inline: 5rem;
+
+
+}
+.left{
+flex: 0 0 250px;
+flex-direction: column;
+justify-content: left;
+align-items: center;
+background-color: rgb(255, 252, 252);
+gap: 1rem;
+padding: 1rem 2rem;
+text-align: left;
+/* letter-spacing: ; */
+/* margin-right: 5rem; */
+}
+.left button{
+background-color: #0b6b6f;
+border: none;
+margin-top: 1rem;
+color: #fff;
+border-radius: 1rem;
+padding: 0.5rem 2rem;
+font-size: 1rem;
+align-self: self-start;
+cursor: pointer;
+}
+
+.testimonals-card  .testimonals-cardright
+{
+width: 100%;
+height: 100%;
+color: white;
+padding: 1.5rem;
+margin-right: 10rem;
+}
+
+.testimonals-card h3{
+margin: 5px 0;
+font-size: 18px;
+font-weight: 700;
+letter-spacing: 1px;
+}
+.testimonals-card .p-s{
+
+margin-bottom: 1rem;
+}
+.testimonals-card .pragraph{
+color: #242527;
+}
+
+.profile img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+object-fit: cover;
+}
+.profile,.contects{
+display: flex;
+gap: 1rem;
+align-items: center;
+}
+/* .card-head{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+} */
+.stars{
+color: gold;
+margin-top: 1rem;
+letter-spacing: 0.2rem;
+}
+.right{
+  
+
+color: black;
+}
+
+/* --- 6. PRICING  SECTION --- */
+.classes-wrapper {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+    /* Left is smaller, Right is wider */
+
+    gap: 40px;
+
+    padding: 60px 0;
+}
+
+.tabs-menu {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.tab-item {
+    background: #fff;
+
+    border: none;
+
+    padding: 30px;
+
+    text-align: left;
+
+    font-weight: 700;
+
+    font-size: 1.1rem;
+
+    color: #232d39;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow from image */
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    border-radius: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.tab-item.active {
+    color: #3bed59;
+}
+
+.content-img {
+  min-height: 5%;
+    width: 100%;
+
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.content-text h3 {
+    font-size: 1.8rem;
+
+    margin-bottom: 15px;
+
+    color: #0a0b0b;
+}
+
+.content-text p {
+    padding: 10px;
+
+    color: #7a7a7a;
+}
+
+#sc-hd {
+    margin-top: 4.5rem;
+
+    text-align: center;
+
+    font-size: 1rem;
+
+    padding: 30px;
+    
+    margin-top:4rem;
+}
+
+#btn-1 {
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    font-weight: 300;
+
+    font-size: 1.6rem;
+
+    color: #f9f4f4;
+    background-color: #3bed59;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Tab Switching Logic */
+
+.tab-panel {
+    display: none;
+    animation: fadeIn 0.5s ease;
+    /* Adds a nice smooth fade */
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
