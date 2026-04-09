@@ -234,7 +234,7 @@ padding: 0px 50px;
 .hygin-image{
 height: 200px;
 margin-top: 8.5rem;
-background-image: url("Assets/Gemini_Generated_Image_gsnunegsnunegsnu.png");
+background-image: url("images/Gemini_Generated_Image_gsnunegsnunegsnu.png");
 background-repeat: no-repeat;
 background-position: right center;
 background-size: cover;
@@ -345,7 +345,7 @@ cursor: pointer;
 
     background-image:
         linear-gradient(rgba(23, 36, 49, 0.751), rgba(23, 36, 49, 0.751)),
-        url("Assets/cleaner.png");
+        url("images/cleaner.png");
 
     background-position: center center;
 
