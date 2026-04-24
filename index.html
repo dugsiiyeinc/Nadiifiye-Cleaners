@@ -14,6 +14,12 @@
         <nav id="mainNav" class="desktop-menu">
             
             <h1>NADIIFIYE <span class="color-diff">CLEANERS</span></h1>
+             <!-- Hamburger Menu  -->
+    <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          
+        </div> 
+        <!-- Mobile Menu -->
              <!-- Hamburger Menu -->
      <div class="hamburger" id="hamburger">
             <i class="fa-solid fa-bars"></i>
@@ -40,6 +46,7 @@
 
     <a href="#" class="mobile-register">REGISTER NOW</a>
 
+</div>
 </div> 
 
     <!-- Desktop Menu  -->
@@ -113,7 +120,7 @@
 <div class="top">Booking</div>
 <div class="line-orange"></div>
 <h2>Clinical Waste Management</h2>
-<p class="desc">A critical hygiene pillar that focuses on the safe disposal of hazardous materials. This includes the separation of sharp objects, chemical runoff, or biological waste into specialized containers. Proper management prevents cross-contamination and ensures the facility meets strict health and safety regulations.p>
+<p class="desc">A critical hygiene pillar that focuses on the safe disposal of hazardous materials. This includes the separation of sharp objects, chemical runoff, or biological waste into specialized containers. Proper management prevents cross-contamination and ensures the facility meets strict health and safety regulations. </p>
 <p class="by">By Nadiifiye Cleaners</p>
 <p class="date">December 2026</p>
 <div class="btns">
@@ -344,7 +351,7 @@
 </footer>
 
 <script>
-    <!-- Background Change on Navigation Section on Scrolling -->
+    //Background Change on Navigation Section on Scrolling 
         window.onscroll = function() {
             var nav = document.getElementById('mainNav');
             // Sticky transition logic
@@ -390,6 +397,29 @@
     });
     
 
+</script>
+<!-- Mobile Menu  responsive -->
+ <script>
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const closeMenu = document.getElementById("closeMenu");
+
+// Open Menu
+hamburger.addEventListener("click", () => {
+  mobileMenu.classList.add("open");
+});
+
+// Close Menu
+closeMenu.addEventListener("click", () => {
+  mobileMenu.classList.remove("open");
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll(".mobile-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("open");
+  });
+});
 </script>
 
 </body>
